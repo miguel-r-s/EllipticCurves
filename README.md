@@ -13,20 +13,22 @@ To test the correctness of the implementation, I wrote some test cases.
 
 * signature.cpp
 
-...Signs a document and verifies the validity of the signature.
+	Signs a document and verifies the validity of the signature.
 * verify.cpp
 
-...Verifies the validity of a given signature.
+	Verifies the validity of a given signature.
 * diffie-hellman.cpp
 
-...Uses ECC to exchange a symmetric key between two individuals (ECDH).
+	Uses ECC to exchange a symmetric key between two individuals (ECDH).
 * performance-benchmark.cpp
 
-...Measure how many key pairs per second a given machine is capable of generating using this implementation.
+	Measure how many key pairs per second a given machine is capable of generating using this implementation.
 
 ## Compiling the tests
 
+```bash
 $ make all
+```
 
 This creates all the executables: "signature", "verify", "diffie-hellman", "performance-benchmark", .
 
